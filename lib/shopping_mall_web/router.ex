@@ -18,6 +18,7 @@ defmodule ShoppingMallWeb.Router do
 
     get "/", PageController, :index
     get "/cart", CartController, :index
+    post "/cart/update", CartController, :update
   end
 
   # Other scopes may use custom stacks.
